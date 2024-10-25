@@ -8,6 +8,7 @@ jobs:
     working_directory: ~/app
     environment:
       MY_VAR: "my-value"
+      SAMPLE: "vl"
     steps:
       - checkout
       - run: echo $MY_VAR
