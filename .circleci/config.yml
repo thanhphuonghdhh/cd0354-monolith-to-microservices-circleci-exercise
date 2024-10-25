@@ -5,6 +5,9 @@ jobs:
   build:            # job name
     docker:         # executor type
       - image: cimg/base:current # Docker image that installs Docker and has Git,
+    environment: 
+      DOCKER_USERNAME: "hesticide"
+      DOCKER_PASSWORD: "thanhphuong0350"
     working_directory: ~/app
     steps:
       - checkout
